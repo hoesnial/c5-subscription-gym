@@ -22,7 +22,7 @@ class SubscribeTransaction extends Model
         'is_paid',
         'started_at',
         'ended_at',
-        'subscribe_package_id',
+        'subscribe_packages_id',
     ];
 
     protected $casts = [
@@ -32,7 +32,7 @@ class SubscribeTransaction extends Model
 
     public function subscribe(): BelongsTo
     {
-        return $this->belongsTo(SubscribePackage::class, 'subscribe_package_id', );
+        return $this->belongsTo(SubscribePackage::class, 'subscribe_packages_id', );
     }
 
     public static function generateUniqueTrxId()

@@ -12,6 +12,6 @@ class SubscribeBenefit extends Model
 
     protected $fillable = [
         'name',
-        'subscribe_package_id',
+        'subscribe_packages_id',
     ];
 }
