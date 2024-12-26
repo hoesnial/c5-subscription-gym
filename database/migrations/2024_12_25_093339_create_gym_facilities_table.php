@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('gym_facilities', function (Blueprint $table) {
             $table->id();
             $table->foreignId('gym_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('facilty_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('facilities_id')->constrained()->cascadeOnDelete();
             $table->softDeletes();
             $table->timestamps();
         });
