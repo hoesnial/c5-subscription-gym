@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
 
-
 class City extends Model
 {
     use HasFactory, SoftDeletes;
@@ -23,6 +22,7 @@ class City extends Model
     {
         $this->attributes['name'] = ucwords($value);
         $this->attributes['slug'] = Str::slug($value);
+        $this->attributes['name'] = $value;
         $this->attributes['slug'] = Str::slug($value);
     }
 
