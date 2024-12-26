@@ -34,5 +34,14 @@ class SubscribeTransaction extends Model
     {
         return $this->belongsTo(SubscribePackage::class, 'subscribe_package_id', );
     }
+
+    public static function generateUniqueTrxId()
+    {
+        $prefix = 'FIT'; // Contoh FIT1242
+        do {
+            $randomString = $prefix . mt_rand(1000, 9999);
+        } while (static::where('trx_id', $randomString)->exists());
+        return $randomString;
+    }
 }
 
