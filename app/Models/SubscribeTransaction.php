@@ -35,6 +35,10 @@ class SubscribeTransaction extends Model
         return $this->belongsTo(SubscribePackage::class, 'subscribe_packages_id', );
     }
 
+    public function subscribePackage() {
+        return $this->belongsTo(SubscribePackage::class);
+    }
+    
     public static function generateUniqueTrxId()
     {
         $prefix = 'FIT'; // Contoh FIT1242
