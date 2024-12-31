@@ -96,7 +96,7 @@
                     <div class="font-['Poppins'] flex flex-col w-full rounded-3xl border border-[#E4E4E4] py-4 px-6 gap-3 bg-white">
                         <div class="flex items-center gap-3">
                             <div class="w-12 h-12 rounded-full border-[5px] border-white overflow-hidden">
-                            <img src="{{ Storage::url($itemTestimonial->photo) }}" class="w-full h-full object-cover" alt="photo">
+                            <img src="{{Storage::url($itemTestimonial->photo) }}" class="w-full h-full object-cover" alt="photo">
                             </div>
                             <div class="flex flex-col gap-1">
                                 <p class="font-semibold text-sm leading-[22px] tracking-03">
