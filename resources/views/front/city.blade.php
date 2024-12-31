@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section('title') Gym di xx City @endsection
 @section('content')
     <x-nav/>
@@ -48,13 +48,14 @@
                         @empty
                         <p>Belum ada data Facilities</p>
                         @endforelse
+                        </div>
                     <hr class="border-black/10">
                         <div class="flex items-center gap-3">
                             <img src="{{asset('assets/images/icons/Daily Time.svg')}}" class="w-10 h-10" alt="icon">
                             <div class="flex flex-col gap-2">
                                 <p class="font-['ClashDisplay-SemiBold'] text-sm leading-17 tracking-05">Opening Work</p>
                                 <p class="text-xs leading-14 tracking-05 opacity-50">
-                                    {{$itemNewGym->opening_time_at->format('h:i A')}} - {{$itemNewGym->close_time_at->format('h:i A')}}
+                                    {{$itemNewGym->open_time_at->format('h:i A')}} - {{$itemNewGym->close_time_at->format('h:i A')}}
                                 </p>
                             </div>
                         </div>
@@ -70,7 +71,7 @@
     <footer class="flex flex-col w-full max-w-[1312px] mx-auto rounded-[32px] bg-black p-[120px] mt-[120px] mb-16">
         <div class="flex justify-between">
             <div class="flex flex-col gap-6 max-w-[306px] text-start">
-                <img src="{{assets('assets/images/logos/Logo-2.svg')}}" class="h-12 w-fit" alt="icon">
+                <img src="{{asset('assets/images/logos/Logo-2.svg')}}" class="h-12 w-fit" alt="icon">
                 <p class="tracking-03 text-white">Largest gym in Indonesia, top-tier facilities, premium amenities, and nationwide access to all gym location</p>
             </div>
             <nav class="flex gap-16 justify-end text-white">
