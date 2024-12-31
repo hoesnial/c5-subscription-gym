@@ -22,7 +22,7 @@ class Gym extends Model
         'open_time_at',
         'close_time_at',
         'is_popular',
-        'adress',
+        'address',
     ];
 
     protected $casts = [

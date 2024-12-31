@@ -30,12 +30,12 @@ class FrontController extends Controller
         //return View('front.pricing', $data);
     }
     public function details(Gym $gym){
-        // dd($gym);
+        //dd($gym);
         return View('front.details', compact('gym'));
     }  
 
     public function city(City $city){
-        // dd($city);
-        return View('front.city', compact('city'));
+        dd($city);
+        //return View('front.city', compact('city'));
     }
 }

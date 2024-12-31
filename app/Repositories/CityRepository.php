@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\City;
+namespace App\Repositories;
 
 use App\Models\City;
 use App\Repositories\Contracts\CityRepositoryInterface;

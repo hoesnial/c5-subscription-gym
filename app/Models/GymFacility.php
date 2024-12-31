@@ -13,7 +13,7 @@ class GymFacility extends Model
 
     protected $fillable = [
         'gym_id',
-        'facilties_id',
+        'facility_id',
     ];
 
     public function gym(): BelongsTo
@@ -23,6 +23,6 @@ class GymFacility extends Model
 
     public function facility(): BelongsTo
     {
-        return $this->belongsTo(Facility::class, 'facilities_id');
+        return $this->belongsTo(Facility::class, 'facility_id');
     }
 }
