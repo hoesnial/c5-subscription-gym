@@ -29,7 +29,7 @@ class FrontController extends Controller
         dd($data);
         //return View('front.pricing', $data);
     }
-    public function details(Gym $gym){
+    public function detail(Gym $gym){
         //dd($gym);
         return View('front.details', compact('gym'));
     }  
