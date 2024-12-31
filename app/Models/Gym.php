@@ -22,7 +22,12 @@ class Gym extends Model
         'open_time_at',
         'close_time_at',
         'is_popular',
-        'adress',
+        'address',
+    ];
+
+    protected $casts = [
+        'open_time_at' => 'datetime:H:i',
+        'close_time_at' => 'datetime:H:i',
     ];
 
     public function setNameAttribute($value)

@@ -15,13 +15,13 @@ class FrontController extends Controller
 
     public function __construct(FrontService $frontService)
     {
-        $this->frontService = $frontService
+        $this->frontService = $frontService;
     }
     public function index() 
     {
         $data = $this->frontService->getFrontPageData();
        // dd($data);
-       return View('front.index', $data);
+        return View('front.index', $data);
     } 
     public function pricing()
     {
@@ -30,12 +30,12 @@ class FrontController extends Controller
         //return View('front.pricing', $data);
     }
     public function details(Gym $gym){
-        dd($gym);
-        //return View('front.details', $data);
+        //dd($gym);
+        return View('front.details', compact('gym'));
     }  
 
     public function city(City $city){
         dd($city);
-        //return View('front.city', $data);
+        //return View('front.city', compact('city'));
     }
 }

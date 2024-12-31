@@ -2,7 +2,8 @@
 
 namespace App\Providers;
 
-use App\Models\City\CityRepository;
+use App\Models\City;
+use App\Repositories\CityRepository;
 use App\Repositories\BookingRepository;
 use App\Repositories\Contracts\BookingRepositoryInterface;
 use App\Repositories\Contracts\CityRepositoryInterface;

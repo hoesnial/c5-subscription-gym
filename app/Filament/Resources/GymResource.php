@@ -64,14 +64,14 @@ class GymResource extends Resource
                     Forms\Components\Repeater::make('GymFacilities')
                         ->relationship('gymFacilities')
                         ->schema([
-                            Forms\Components\Select::make('facilities_id')
+                            Forms\Components\Select::make('facility_id')
                                 ->label('Gym Facility')
                                 ->options(Facility::all()->pluck('name','id'))
                                 ->searchable()
                                 ->required(),
                         ]),
                     
-                    Forms\Components\Select::make('is_populer')
+                    Forms\Components\Select::make('is_popular')
                     ->options([
                         true => 'Popular',
                         false => 'Not Popular'
@@ -87,7 +87,7 @@ class GymResource extends Resource
                     Forms\Components\TimePicker::make('open_time_at')
                     ->required(),
 
-                    Forms\Components\TimePicker::make('closed_time_at')
+                    Forms\Components\TimePicker::make('close_time_at')
                     ->required(),
                     ]),
                

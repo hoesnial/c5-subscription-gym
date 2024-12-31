@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('slug');
             $table->text('address');
             $table->text('about');
-            $table->boolean('is_popular');
+            $table->boolean('is_popular')->default(false); // Tambahkan default value
             $table->time('open_time_at');
             $table->time('close_time_at');
             $table->foreignId('city_id')->constrained()->cascadeOnDelete();
