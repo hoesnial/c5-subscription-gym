@@ -18,6 +18,8 @@ class SubscribePackageResource extends Resource
     protected static ?string $model = SubscribePackage::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = 'System Managament';
+
 
     public static function form(Form $form): Form
     {

@@ -24,6 +24,8 @@ class GymResource extends Resource
     protected static ?string $model = Gym::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = 'System Managament';
+
 
     public static function form(Form $form): Form
     {
