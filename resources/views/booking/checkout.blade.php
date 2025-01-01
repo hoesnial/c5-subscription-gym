@@ -48,7 +48,7 @@
                                 </button>
                             </div>
                         </div>
-                        <p class="text-sm leading-16 tracking-03 opacity-60">{{$subscribePackage=>duration}} days- All Benefits Included</p>
+                        <p class="text-sm leading-16 tracking-03 opacity-60">{{$subscribePackage->duration}} days- All Benefits Included</p>
                     </div>
                 </div>
                 <hr class="border-black opacity-10">

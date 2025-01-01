@@ -15,15 +15,15 @@
                 <hr class="border-black opacity-10">
                 <div class="group flex items-center justify-between">
                     <p class="flex w-[162px] shrink-0 font-['ClashDisplay-SemiBold'] leading-19 tracking-05">Full Name</p>
-                    <p class="leading-19 tracking-05">{{booking{'name'}}}</p>
+                    <p class="leading-19 tracking-05">{{$booking['name']}}</p>
                 </div>
                 <div class="group flex items-center justify-between">
                     <p class="flex w-[162px] shrink-0 font-['ClashDisplay-SemiBold'] leading-19 tracking-05">Phone Number</p>
-                    <p class="leading-19 tracking-05">{{booking{'phone'}}}</p>
+                    <p class="leading-19 tracking-05">{{$booking['phone']}}</p>
                 </div>
                 <div class="group flex items-center justify-between">
                     <p class="flex w-[162px] shrink-0 font-['ClashDisplay-SemiBold'] leading-19 tracking-05">Email</p>
-                    <p class="leading-19 tracking-05">{{booking{'email'}}}</p>
+                    <p class="leading-19 tracking-05">{{$booking['email']}}</p>
                 </div>
             </div>
             <div id="booking-items" class="flex flex-col w-full rounded-3xl p-8 gap-6 bg-white">
@@ -31,7 +31,7 @@
                     <p class="font-['ClashDisplay-SemiBold'] text-xl leading-6 tracking-05">Booking ID : <span class="text-[#606DE5]">TBD</span></p>
                 </div>
                 <div class="items flex flex-nowrap gap-4 w-full">
-                    <img src="assets/images/icons/cart.svg')}}" class="w-10 h-10 flex shrink-0" alt="icon">
+                    <img src="{{asset('assets/images/icons/cart.svg')}}" class="w-10 h-10 flex shrink-0" alt="icon">
                     <div class="flex flex-col gap-2 w-full">
                         <div class="flex justify-between">
                             <p class="font-['ClashDisplay-SemiBold'] leading-19 tracking-05">
@@ -39,7 +39,7 @@
                             </p>
                         </div>
                         <p class="text-sm leading-16 tracking-03 opacity-60">
-                            {{$subscribePackage=>duration}} days- All Benefits Included
+                            {{$subscribePackage->duration}} days- All Benefits Included
                         </p>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="flex w-full aspect-[820/209]">
-                <img src="assets/images/thumbnails/banner.png')}}" class="w-full h-full object-contain" alt="banner">
+                <img src="{{asset('assets/images/thumbnails/banner.png')}}" class="w-full h-full object-contain" alt="banner">
             </div>
         </div>
         <div class="flex flex-col gap-6 w-full">
@@ -78,14 +78,14 @@
                     <p class="text-sm leading-16 tracking-03 opacity-60">Select one of the two banks below</p>
                 </div>
                 <div class="flex items-center gap-4">
-                    <img src="assets/images/logos/BCA.svg')}}" class="w-12 flex shrink-0" alt="logo">
+                    <img src="{{asset('assets/images/logos/BCA.svg')}}" class="w-12 flex shrink-0" alt="logo">
                     <div class="flex flex-col gap-2">
                         <p class="font-['ClashDisplay-SemiBold'] leading-19 tracking-05">Fitnesia Corporation</p>
                         <p class="leading-19">129405960495</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-4">
-                    <img src="assets/images/logos/MANDIRI.svg')}}" class="w-12 flex shrink-0" alt="logo">
+                    <img src="{{asset('assets/images/logos/MANDIRI.svg')}}" class="w-12 flex shrink-0" alt="logo">
                     <div class="flex flex-col gap-2">
                         <p class="font-['ClashDisplay-SemiBold'] leading-19 tracking-05">Fitnesia Corporation</p>
                         <p class="leading-19">129405960495</p>
@@ -107,7 +107,7 @@
     <footer class="flex flex-col w-full max-w-[1312px] mx-auto rounded-[32px] bg-black p-[120px] mt-[120px] mb-16">
         <div class="flex justify-between">
             <div class="flex flex-col gap-6 max-w-[306px] text-start">
-                <img src="assets/images/logos/Logo-2.svg')}}" class="h-12 w-fit" alt="icon">
+                <img src="{{asset('assets/images/logos/Logo-2.svg')}}" class="h-12 w-fit" alt="icon">
                 <p class="tracking-03 text-white">Largest gym in Indonesia, top-tier facilities, premium amenities, and nationwide access to all gym location</p>
             </div>
             <nav class="flex gap-16 justify-end text-white">

@@ -11,7 +11,7 @@
             </div>
             <div class="flex gap-8 max-w-[1132px] mx-auto mt-20 mb-[124px]">
 
-                @forelse ($subscribePackage as $itemSubscribe)
+                @forelse ($subscribePackages as $itemSubscribe)
                 <div class="card flex flex-col w-[356px] rounded-3xl p-8 gap-6 bg-white">
                     <div class="flex w-full h-[200px] rounded-3xl overflow-hidden bg-[#606DE5]">
                         <img src="{{Storage::url($itemSubscribe->icon)}}" class="w-full h-full object-cover" alt="icon">

@@ -24,7 +24,7 @@ class BookingService
     public function getBookingDetails(array $validated)
     {
         return $this->bookingRepository->findByTrxIdAndPhoneNumber($validated['booking_trx_id'], 
-        $validated['phone_number']);
+        $validated['phone']);
     }
 
     public function calculateBookingData($subscribePackage, $validatedData)
@@ -45,7 +45,7 @@ class BookingService
             'name'=> $validatedData['name'],
             'email'=> $validatedData['email'],
             'duration' => $duration,
-            'phone'=> $validatedData['phone_number'],
+            'phone'=> $validatedData['phone'],
             'started_at' => $startedAt,
             'ended_at' => $endedAt,
             'subtotal' => $subTotal,
