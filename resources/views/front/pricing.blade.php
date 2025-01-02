@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title') Biaya Langganan Fitcamp @endsection
+@section('title') Biaya Langganan Fitgen @endsection
 @section('content')
 <x-nav/>
 <main id="content" class="relative flex w-full max-w-[1312px] min-h-[970px] h-fit mx-auto mt-[120px] rounded-[32px] bg-[#606DE5] overflow-hidden">
@@ -78,17 +78,17 @@
                         <a href="#" class="tracking-03">021 543 545 676</a>
                     </li>
                     <li>
-                        <a href="#" class="tracking-03">@fitcamp.bodyfit</a>
+                        <a href="#" class="tracking-03">@fitgen.bodyfit</a>
                     </li>
                     <li>
-                        <a href="#" class="tracking-03">admin@fitcamp.com</a>
+                        <a href="#" class="tracking-03">admin@fitgen.com</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <hr class="border-white/50 mt-16">
         <div class="flex items-center justify-between mt-[30px]">
-            <p class="font-semibold tracking-03 text-white">© 2024 fitcampcorporation</p>
+            <p class="font-semibold tracking-03 text-white">© 2024 fitgencorporation</p>
             <ul class="flex items-center justify-end gap-6 text-white">
                 <li>
                     <a href="#" class="tracking-03">Term of Services</a>

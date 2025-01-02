@@ -5,7 +5,7 @@
         <img src="{{asset('assets//images/backgrounds/Header Illustration.svg')}}" class="absolute w-full h-full object-cover" alt="backgrounds">
         <x-nav/>
         <div id="hero-text" class="relative flex flex-col items-center mx-auto mt-[96px]">
-            <div class="flex items-center w-fit rounded-[38px] p-2 pr-6 gap-3 bg-fitcamp-black">
+            <div class="flex items-center w-fit rounded-[38px] p-2 pr-6 gap-3 bg-fitgen-black">
                 <img src="{{asset('assets/images/photos/triple-photo.png')}}" class="flex shrink-0 w-[88px] h-10" alt="photos">
                 <p class="leading-19 text-white">Over <span class="font-semibold">100K+</span> Member Joined</p>
             </div>
@@ -13,7 +13,7 @@
             <p class="leading-19 text-white">Transform Your Life by Investing in Your Wellness</p>
             <form action="#" class="flex items-center w-[487px] rounded-[53px] p-2 pl-6 gap-6 bg-white mt-[38px]">
                 <input type="text" name="" id="" class="appearance-none outline-none !bg-white w-full leading-19 font-semibold placeholder:text-[#3F3F3F80]" placeholder="Search gym location, city nearby...">
-                <button type="submit" class="rounded-[48px] py-4 px-6 bg-fitcamp-black font-semibold leading-19 text-white">Search</button>
+                <button type="submit" class="rounded-[48px] py-4 px-6 bg-fitgen-black font-semibold leading-19 text-white">Search</button>
             </form>
         </div>
     </header>
@@ -29,7 +29,7 @@
             <div class="flex flex-col items-center w-[282px] gap-4 text-center">
                 <img src="{{asset('assets/images/icons/coupon-dollar.svg')}}" class="w-[72px] h-[72px] flex shrink-0" alt="icon">
                 <h3 class="font-['ClashDisplay-SemiBold'] text-xl leading-6 tracking-05">Become Membership</h3>
-                <p class="tracking-03">Access to all fitcamp gym <br>
+                <p class="tracking-03">Access to all fitgen gym <br>
                     and become part of our exclusive <br>
                     healty community. </p>
             </div>
@@ -72,7 +72,7 @@
                 <h2 class="font-['ClashDisplay-SemiBold'] text-5xl leading-[59px] tracking-05">Latest Added</h2>
                 <p class="leading-19 tracking-03 opacity-60">New gyms added from around the city with variety facilities available</p>
             </div>
-            <a href="#" class="w-fit rounded-full py-4 px-6 bg-fitcamp-black text-white">
+            <a href="#" class="w-fit rounded-full py-4 px-6 bg-fitgen-black text-white">
                 See All
             </a>
         </div>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="flex items-center justify-between">
                         <p class="font-['ClashDisplay-SemiBold']">Facilities</p>
-                        <button class="font-semibold text-xs leading-14 tracking-05 text-fitcamp-royal-blue">View all</button>
+                        <button class="font-semibold text-xs leading-14 tracking-05 text-fitgen-royal-blue">View all</button>
                     </div>
                     <div class="grid grid-cols-3 justify-between gap-3">
                         @forelse ($itemNewGym->gymFacilities->take(3) as $itemFacility)
@@ -140,7 +140,7 @@
             <div class="flex flex-col gap-4">
                 <h2 class="font-['ClashDisplay-SemiBold'] text-5xl leading-[59px] tracking-05">Joined  10.000+ User <br>with Happy Story</h2>
             </div>
-            <a href="#" class="w-fit rounded-full py-4 px-6 bg-fitcamp-black text-white">
+            <a href="#" class="w-fit rounded-full py-4 px-6 bg-fitgen-black text-white">
                 See All
             </a>
         </div>
@@ -285,17 +285,17 @@
                         <a href="#" class="tracking-03">021 543 545 676</a>
                     </li>
                     <li>
-                        <a href="#" class="tracking-03">@fitcamp.bodyfit</a>
+                        <a href="#" class="tracking-03">@fitgen.bodyfit</a>
                     </li>
                     <li>
-                        <a href="#" class="tracking-03">admin@fitcamp.com</a>
+                        <a href="#" class="tracking-03">admin@fitgen.com</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <hr class="border-white/50 mt-16">
         <div class="flex items-center justify-between mt-[30px]">
-            <p class="font-semibold tracking-03 text-white">© 2024 fitcampcorporation</p>
+            <p class="font-semibold tracking-03 text-white">© 2024 fitgencorporation</p>
             <ul class="flex items-center justify-end gap-6 text-white">
                 <li>
                     <a href="#" class="tracking-03">Term of Services</a>
