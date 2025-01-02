@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title') Gym di xx City @endsection
+@section('title') Gym di xxx City @endsection
 @section('content')
     <x-nav/>
     <section id="latest" class="flex flex-col w-full max-w-[1280px] gap-8 mx-auto px-10 mt-[120px]">
@@ -8,7 +8,7 @@
                 <h2 class="font-['ClashDisplay-SemiBold'] text-5xl leading-[59px] tracking-05">
                     {{$city->name}}
                 </h2>
-                <p class="leading-19 tracking-03 opacity-60">Finding FitCamp gym location nearby “{{$city->name}}” city</p>
+                <p class="leading-19 tracking-03 opacity-60">Finding fitgen gym location nearby “{{$city->name}}” city</p>
             </div>
         </div>
         <div class="grid grid-cols-3 gap-6">
@@ -32,7 +32,7 @@
                     </div>
                     <div class="flex items-center justify-between">
                         <p class="font-['ClashDisplay-SemiBold']">Facilities</p>
-                        <button class="font-semibold text-xs leading-14 tracking-05 text-fitcamp-royal-blue">View all</button>
+                        <button class="font-semibold text-xs leading-14 tracking-05 text-fitgen-royal-blue">View all</button>
                     </div>
                     <div class="grid grid-cols-3 justify-between gap-3">
                         @forelse ($itemNewGym->gymFacilities->take(3) as $itemFacility)
@@ -96,17 +96,17 @@
                         <a href="#" class="tracking-03">021 543 545 676</a>
                     </li>
                     <li>
-                        <a href="#" class="tracking-03">@fitcamp.bodyfit</a>
+                        <a href="#" class="tracking-03">@fitgen.bodyfit</a>
                     </li>
                     <li>
-                        <a href="#" class="tracking-03">admin@fitcamp.com</a>
+                        <a href="#" class="tracking-03">admin@fitgen.com</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <hr class="border-white/50 mt-16">
         <div class="flex items-center justify-between mt-[30px]">
-            <p class="font-semibold tracking-03 text-white">© 2024 fitcampcorporation</p>
+            <p class="font-semibold tracking-03 text-white">© 2024 fitgencorporation</p>
             <ul class="flex items-center justify-end gap-6 text-white">
                 <li>
                     <a href="#" class="tracking-03">Term of Services</a>
@@ -123,4 +123,5 @@
             </ul>
         </div>
     </footer>
+    
 @endsection

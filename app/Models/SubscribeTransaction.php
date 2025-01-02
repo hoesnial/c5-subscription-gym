@@ -22,7 +22,7 @@ class SubscribeTransaction extends Model
         'is_paid',
         'started_at',
         'ended_at',
-        'subscribe_packages_id',
+        'subscribe_package_id',
     ];
 
     protected $casts = [
@@ -32,7 +32,7 @@ class SubscribeTransaction extends Model
 
     public function subscribe(): BelongsTo
     {
-        return $this->belongsTo(SubscribePackage::class, 'subscribe_packages_id', );
+        return $this->belongsTo(SubscribePackage::class, 'subscribe_package_id', );
     }
 
     public function subscribePackage() {
@@ -44,7 +44,7 @@ class SubscribeTransaction extends Model
         $prefix = 'FIT'; // Contoh FIT1242
         do {
             $randomString = $prefix . mt_rand(1000, 9999);
-        } while (static::where('trx_id', $randomString)->exists());
+        } while (static::where('booking_trx_id', $randomString)->exists());
         return $randomString;
     }
 }

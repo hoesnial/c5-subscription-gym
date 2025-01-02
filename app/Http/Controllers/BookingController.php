@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreCheckBookingRequest;
 use App\Http\Requests\StoreBookingRequest;
 use App\Http\Requests\StorePaymentRequest;
 use App\Models\SubscribePackage;
@@ -43,20 +44,21 @@ class BookingController extends Controller
 public function payment()
 {
     $data = $this->bookingService->payment();
+    //dd($data);
     return view('booking.payment', $data);
 }
     public function paymentStore(StorePaymentRequest $request)
     {
         $validated = $request->validated();
-        $bookingTransactionID = $this->bookingService->paymentStore($validated);
+        $bookingTransactionId = $this->bookingService->paymentStore($validated);
         
-        if ($bookingTransactionID){
-            return redirect()->route('front.booking_finished', $bookingTransactionID);
+        if ($bookingTransactionId){
+            return redirect()->route('front.booking_finished', $bookingTransactionId);
         }
-        return redirect()->route('front.index')->withErrors(['error' => 'Payment failed. Please try again.']);
+        return redirect()->route( 'front.index')->withErrors(['error' => 'Payment failed. Please try again.']);
     }
 
-    public function bookingFinsished(SubscribeTransaction $subscribeTransaction){
+    public function bookingFinished(SubscribeTransaction $subscribeTransaction){
         return view('booking.booking_finished', compact('subscribeTransaction'));
     }
 
@@ -64,7 +66,7 @@ public function payment()
         return view('booking.check_booking');
     }
 
-    public function checkBookingDetails(StoreBookingRequest $request){
+    public function checkBookingDetails(StoreCheckBookingRequest $request){
         $validated = $request->validated();
 
         $bookingDetails = $this->bookingService->getBookingDetails($validated);

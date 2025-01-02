@@ -28,7 +28,7 @@ class FrontService
         return compact('cities', 'popularGyms', 'newGyms');
     }
 
-    public function getSubscribePackages()
+    public function getSubscriptionsData()
     {
         $subscribePackages = $this->subscribePackageRepository->getAllSubscribePackages();
         return compact('subscribePackages');

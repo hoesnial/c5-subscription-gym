@@ -17,15 +17,15 @@ return new class extends Migration
             $table->string('booking_trx_id');
             $table->string('name');
             $table->string('email');
+            $table->string('phone');
             $table->string('proof');
             $table->unsignedBigInteger('total_amount');
             $table->unsignedBigInteger('duration');
-            $table->boolean('is_pid');
+            $table->boolean('is_paid');
             $table->date('started_at');
             $table->date('ended_at');
             $table->foreignId('subscribe_package_id')->constrained()->cascadeOnDelete();
             $table->softDeletes();
-
             $table->timestamps();
         });
     }
