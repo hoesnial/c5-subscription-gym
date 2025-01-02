@@ -1,30 +1,30 @@
 <svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_2_2)">
 <rect width="1440" height="900" fill="white"/>
-<rect width="1440" height="890" fill="url(#paint0_linear_2_2)"/>
-<rect x="1440" y="900" width="1440" height="900" transform="rotate(-180 1440 900)" fill="url(#pattern0_2_2)"/>
+<rect y="2.00009" width="1440" height="890" fill="url(#paint0_linear_2_2)"/>
+<rect x="1440" y="902" width="1440" height="900" transform="rotate(-180 1440 902)" fill="url(#pattern0_2_2)"/>
 <g filter="url(#filter0_f_2_2)">
-<ellipse cx="182" cy="497.5" rx="296" ry="277.5" fill="#6155ED" fill-opacity="0.8"/>
+<ellipse cx="182" cy="499.5" rx="296" ry="277.5" fill="#6155ED" fill-opacity="0.8"/>
 </g>
-<rect x="92" y="80" width="1566" height="810" fill="url(#pattern1_2_2)"/>
-<rect x="92" y="80" width="1566" height="810" fill="url(#pattern2_2_2)" fill-opacity="0.25"/>
+<rect x="226" y="22" width="1383" height="880" fill="url(#pattern1_2_2)"/>
+<rect x="226" y="22" width="1383" height="880" fill="url(#pattern2_2_2)" fill-opacity="0.25"/>
 </g>
 <defs>
 <pattern id="pattern0_2_2" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_2_2" transform="matrix(0.00025 0 0 0.0004 0 -0.1)"/>
 </pattern>
-<filter id="filter0_f_2_2" x="-314" y="20" width="992" height="955" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f_2_2" x="-314" y="22.0001" width="992" height="955" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_2_2"/>
 </filter>
 <pattern id="pattern1_2_2" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image1_2_2" transform="matrix(0.000520833 0 0 0.00100694 0 -0.04375)"/>
+<use xlink:href="#image1_2_2" transform="matrix(0.000589165 0 0 0.000925926 -0.0655981 0)"/>
 </pattern>
 <pattern id="pattern2_2_2" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image2_2_2" transform="matrix(0.000520833 0 0 0.00100694 0 -0.04375)"/>
+<use xlink:href="#image2_2_2" transform="matrix(0.000581276 0 0 0.000925926 -0.0786429 0.0082108)"/>
 </pattern>
-<linearGradient id="paint0_linear_2_2" x1="595.5" y1="1.21928e-06" x2="720" y2="890" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_2_2" x1="595.5" y1="2.00009" x2="720" y2="892" gradientUnits="userSpaceOnUse">
 <stop stop-color="#B1D9F1"/>
 <stop offset="1" stop-color="#44B9FF"/>
 </linearGradient>
